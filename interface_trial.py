@@ -7,10 +7,10 @@ model = joblib.load("model_to_upload_on_streamlit.pkl")  # Update with your mode
 
 # Example output feature names (replace with your actual list)
 output_feature_names = [
-    "Front right Blank holder Pressure-Kg/cm",
-    "Front left Blank holder Pressure Kg/cm",
-    "Rear right Blank holder Pressure Kg/cm",
-    "Rear left Blank holder Pressure Kg/cm",
+    "Front Left Blank holder Pressure-Kg/cm",
+    "Front Right Blank holder Pressure Kg/cm",
+    "Rear Left Blank holder Pressure Kg/cm",
+    "Rear Right Blank holder Pressure Kg/cm",
     "Inner Setting-mm",
     "Outer Setting mm"
 ]
