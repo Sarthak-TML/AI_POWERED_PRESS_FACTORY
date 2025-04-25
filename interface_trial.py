@@ -3,7 +3,7 @@ import numpy as np
 import joblib  # or import your model loader if different
 
 # Load your trained model
-model = joblib.load("Press Factory Project/streamlitmodel.pkl")  # Update with your model path
+model = joblib.load("streamlitmodel.pkl")  # Update with your model path
 
 # Example output feature names (replace with your actual list)
 output_feature_names = [
