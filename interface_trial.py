@@ -32,16 +32,16 @@ fmb_rmb_val = 0 if fmb_rmb == "fmb" else 1
 
 # Continuous Inputs
 st.write("### Metallurgical Properties")
-mn = st.number_input("Mn%", value=0.072, format="%.3f")
-p = st.number_input("P%", value=0.009, format="%.3f")
-s = st.number_input("S%", value=0.003, format="%.3f")
-si = st.number_input("Si%", value=0.002, format="%.3f")
-al = st.number_input("Al%", value=0.0, format="%.3f")
-ti = st.number_input("Ti%", value=0.0, format="%.3f")
+mn = st.number_input("Mn%", value=0.072, format="%.5f")
+p = st.number_input("P%", value=0.009, format="%.5f")
+s = st.number_input("S%", value=0.003, format="%.5f")
+si = st.number_input("Si%", value=0.002, format="%.5f")
+al = st.number_input("Al%", value=0.0, format="%.5f")
+ti = st.number_input("Ti%", value=0.0, format="%.5f")
 ys = st.number_input("YS (MPa)", value=159)
 uts = st.number_input("UTS (MPa)", value=298)
 el = st.number_input("El%", value=43)
-r_bar = st.number_input("R Bar", value=2.24, format="%.2f")
+r_bar = st.number_input("R Bar", value=2.24, format="%.5f")
 
 # New inputs for Inner and Outer Setting
 st.write("### Tool Settings")
