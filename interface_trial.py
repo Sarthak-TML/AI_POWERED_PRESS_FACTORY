@@ -42,7 +42,9 @@ ys = st.number_input("YS (MPa)", value=159)
 uts = st.number_input("UTS (MPa)", value=298)
 el = st.number_input("El%", value=43)
 r_bar = st.number_input("R Bar", value=2.24, format="%.2f")
-
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+st.sidebar.markdown("### 👨‍💻 Developer Info")
+st.sidebar.info("Developed by **Sarthak Kadam**, Tata Motors Internship Project 2025.")
 # New inputs for Inner and Outer Setting
 st.write("### Tool Settings")
 inner_setting = st.number_input("Inner Setting (mm)", value=1664.00, format="%.2f")
@@ -64,24 +66,21 @@ if st.button("Predict"):
         rounded_value = round(float(prediction[0][i]), 1)
         st.write(f"**{feature}:** {rounded_value:.1f}")
 
-# # Add this at the end of your script
-# hide_streamlit_style = """
-#     <style>
-#     #MainMenu {visibility: hidden;}
-#     footer {visibility: hidden;}
-#     .footer:after {
-#         content:'Developed by Sarthak Kadam – Tata Motors AI/ML Intern';
-#         visibility: visible;
-#         display: block;
-#         position: relative;
-#         color: gray;
-#         text-align: center;
-#         padding: 10px;
-#     }
-#     </style>
-# """
-# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-st.sidebar.markdown("### 👨‍💻 Developer Info")
-st.sidebar.info("Developed by **Sarthak Kadam**, Tata Motors Internship Project 2025.")
+# Add this at the end of your script
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .footer:after {
+        content:'Developed by Sarthak Kadam – Tata Motors AI/ML Intern';
+        visibility: visible;
+        display: block;
+        position: relative;
+        color: red;
+        text-align: center;
+        padding: 10px;
+    }
+    </style>
+"""
 
 
