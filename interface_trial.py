@@ -65,23 +65,23 @@ if st.button("Predict"):
         rounded_value = round(float(prediction[0][i]), 1)
         st.write(f"**{feature}:** {rounded_value:.1f}")
 
-# Add this at the end of your script
-hide_streamlit_style = """
+# Hide Streamlit default elements
+st.markdown("""
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    .footer:after {
-        content:'Developed by Your Name – Tata Motors Project';
-        visibility: visible;
-        display: block;
-        position: relative;
-        color: red;
-        text-align: center;
-        padding: 10px;
-    }
+    header {visibility: hidden;}
     </style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
+
+# Your custom footer
+st.markdown("""
+    <hr style="margin-top: 30px;">
+    <div style="text-align: center; color: red; font-size: 14px;">
+        Developed by <b>Sarthak Kadam</b> – Tata Motors Internship Project 2025
+    </div>
+""", unsafe_allow_html=True)
+
 
 
 
