@@ -51,8 +51,8 @@ outer_setting = st.number_input("Outer Setting (mm)", value=1390.00, format="%.2
 # Create input array in the correct order
 input_array = np.array([[remark_crack_val, remark_wrinkle_val, oiling_val,
                          bull_ring_val, fmb_rmb_val,
-                         mn, p, s, si, al, ti, ys, uts, el, r_bar,
-                         inner_setting, outer_setting]])
+                         inner_setting, outer_setting,
+                         mn, p, s, si, al, ti, ys, uts, el, r_bar]])
 
 # Predict Button
 if st.button("Predict"):
