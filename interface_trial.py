@@ -42,8 +42,7 @@ ys = st.number_input("YS (MPa)", value=159)
 uts = st.number_input("UTS (MPa)", value=298)
 el = st.number_input("El%", value=43)
 r_bar = st.number_input("R Bar", value=2.24, format="%.2f")
-st.sidebar.markdown("### 👨‍💻 Developer Info")
-st.sidebar.info("Developed by **Sarthak Kadam**, Tata Motors Internship Project 2025.")
+
 # New inputs for Inner and Outer Setting
 st.write("### Tool Settings")
 inner_setting = st.number_input("Inner Setting (mm)", value=1664.00, format="%.2f")
@@ -77,7 +76,7 @@ st.markdown("""
 # Your custom footer
 st.markdown("""
     <hr style="margin-top: 30px;">
-    <div style="text-align: center; color: red; font-size: 14px;">
+    <div style="text-align: center; color: black; font-size: 14px;">
         Developed by <b>Sarthak Kadam</b> – Tata Motors Internship Project 2025
     </div>
 """, unsafe_allow_html=True)
