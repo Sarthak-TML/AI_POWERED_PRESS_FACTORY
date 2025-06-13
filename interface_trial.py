@@ -63,3 +63,22 @@ if st.button("Predict"):
     for i, feature in enumerate(output_feature_names):
         rounded_value = round(float(prediction[0][i]), 1)
         st.write(f"**{feature}:** {rounded_value:.1f}")
+
+# Add this at the end of your script
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .footer:after {
+        content:'Developed by Sarthak Kadam – Tata Motors AI/ML Intern';
+        visibility: visible;
+        display: block;
+        position: relative;
+        color: gray;
+        text-align: center;
+        padding: 10px;
+    }
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
