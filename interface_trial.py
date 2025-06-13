@@ -77,7 +77,7 @@ st.markdown("""
 st.markdown("""
     <hr style="margin-top: 30px;">
     <div style="text-align: center; color: black; font-size: 14px;">
-        Developed by <b>Sarthak Kadam</b> – Tata Motors Internship Project 2025
+        Developed by <b>Sarthak Uddhav Kadam</b> – Tata Motors Internship Project 2025
     </div>
 """, unsafe_allow_html=True)
 
