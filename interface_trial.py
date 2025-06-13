@@ -42,7 +42,6 @@ ys = st.number_input("YS (MPa)", value=159)
 uts = st.number_input("UTS (MPa)", value=298)
 el = st.number_input("El%", value=43)
 r_bar = st.number_input("R Bar", value=2.24, format="%.2f")
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.sidebar.markdown("### 👨‍💻 Developer Info")
 st.sidebar.info("Developed by **Sarthak Kadam**, Tata Motors Internship Project 2025.")
 # New inputs for Inner and Outer Setting
@@ -72,7 +71,7 @@ hide_streamlit_style = """
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     .footer:after {
-        content:'Developed by Sarthak Kadam – Tata Motors AI/ML Intern';
+        content:'Developed by Your Name – Tata Motors Project';
         visibility: visible;
         display: block;
         position: relative;
@@ -82,5 +81,7 @@ hide_streamlit_style = """
     }
     </style>
 """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 
