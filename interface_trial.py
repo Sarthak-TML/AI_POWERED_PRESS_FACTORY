@@ -3,7 +3,7 @@ import numpy as np
 import joblib  # or import your model loader if different
 
 # Load your trained model
-model = joblib.load("streamlit.pkl")  # Update with your model path
+model = joblib.load("streamlitmodel-inner-outter-input.pkl")  # Update with your model path
 
 # Updated output feature names (excluding inner/outer setting)
 output_feature_names = [
